@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.0.1">
+  <title>Checkout example · Bootstrap</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/assets/dist/css/bootstrap.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="form-validation.css" rel="stylesheet">
+</head>
+
+
+<body class="bg-light">
+  <div class="container">
+    <div class="py-5 text-right">
+    <i class="fas fa-barcode fa-3x text-black-3 "></i> <i class="fas fa-barcode fa-3x text-black-3 "></i><i class="fas fa-barcode fa-3x text-black-3 "></i><i class="fas fa-barcode fa-3x text-black-3 "></i>
+  </div>
+    <div class="py-5 text-center">
+      <i class="fas fa-car-side fa-10x text-black-50"></i>
+    </div>
+    <div class="py-5 text-center">
+   
+      <h2>ใบสั่งเจ้าพนักงานจราจรหรือพนักงานเจ้าหน้าที่</h2>
+    </div>
+    <!--<div class="row">-->
+    <div class="container">
+      <form class="needs-validation">
+        <h3>เลขที่ใบสั่ง 006654</h3>
+          <div class="mb-3">
+            <label>ด้วยผู้ขับขี่ :</label>
+            <div class="row">
+            <div class="col-md-3">
+              <input type="radio" name="drive" required />รถจักรยานยนต์ </div>
+            <div class="col-md-3">
+              <input type="radio" name="drive" required />รถยนต์นั่งส่วนบุคคล</div>
+            <div class="col-md-3">
+              <input type="radio" name="drive" required />รถประเภทอื่น</div>
+            <div class="col-md-3">
+              <input type="radio" name="drive" required />รถขนส่ง</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="cars">ยี่ห้อ</label>
+            <select name="cars" id="cars" class="form-control">
+              <option value="toyota">Toyota</option>
+              <option value="honda">Honda</option>
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+            </select>
+            <div class="invalid-feedback">
+             เลือกยี่ห้อรถขอคุณ
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div>
+            <input type="radio" name="city" required />กรุงเทพมหานคร</div>
+            <div>
+            <input type="radio" name="city" required />จังหวัด</div>
+            <input type="text" class="form-control" name="city" placeholder="จังหวัด">
+            <div class="invalid-feedback">
+              เลือกจังหวัดของคุณ
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <h4>หมายเลขทะเบียนรถ :</h4>
+          <input type="text" class="form-control" name="cnumber" placeholder="ระบุ">
+        </div>
+
+        <div class="mb-3">
+          <h4>ป้ายทะเบียนสี :</h4>
+          <div class="row">
+          <div class="col-md-2">
+            <input type="radio" name="ccolor" required />ขาว </div>
+          <div class="col-md-2">
+            <input type="radio" name="ccolor" required />เหลือง</div>
+          <div class="col-md-2">
+            <input type="radio" name="ccolor" required />เขียว</div>
+          <div class="col-md-2">
+            <input type="radio" name="ccolor" required />แดง</div>
+          <div class="col-md-2">
+            <input type="radio" name="ccolor" required />ฟ้า</div>
+          <div class="col-md-1">
+            <input type="radio" name="ccolor" required />อื่นๆ</div>
+          <div class="col-md-1">
+            <input type="text" class="form-control" name="ccolor" placeholder="ระบุสี"></div>
+        </div>
+
+        <div class="mb-3">
+          <h4>กระทำผิดฐาน :</h4>
+          <b>(1) ขับรถ</b>
+          <div class="row">
+          <div class="col-md-4">
+            <input type="radio" name="offense" required />ฝ่าฝืนสัญญาณไฟจราจรสีแดง</div>
+          <div class="col-md-4">
+            <input type="radio" name="offense" required />ฝ่าฝืนเครื่องหมายบนพื้นทาง</div>
+          <div class="col-md-4">
+            <input type="radio" name="offense" required />ฝ่าฝืนเครื่องหมายจราจรห้าม</div>
+          
+          <div class="col-md-4">
+            <input type="radio" name="offense" required />ในลักษณะกีดขวางการจราจร</div>
+          <div class="col-md-4">
+            <input type="radio" name="offense" required />ไม่ใกล้ขอบการเดินรถด้านซ้าย</div>
+          <div class="col-md-4">
+            <input type="radio" name="offense" required />แซงเมื่อเข้าที่ขบขัน</div>
+          </div>
+          <b>(2) หยุดรถ</b>
+          <div class="row">
+          <div class="col-md-4">
+            <input type="radio" name="offense" required />ในลักษณะกีดขวางการจราจร</div>
+          <div class="col-md-4">
+            <input type="radio" name="offense" required />ในเขตห้ามหยุด</div>
+          <div class="col-md-4">
+            <input type="radio" name="offense" required />รอสัญญาณล้ำแนว</div>
+          </div>
+          <b>(3) จอดรถไว้</b>
+          <div class="row">
+          <div class="col-md-4">
+            <input type="radio" name="offense" required />ในลักษณะกีดขวางการจราจร</div>
+          <div class="col-md-4">
+            <input type="radio" name="offense" required />บนทางเท้า</div>
+          <div class="col-md-4">
+            <input type="radio" name="offense" required />ในเขตห้ามจอด</div>
+          
+          <div class="col-md-4">
+            <input type="radio" name="offense" required />ไม่ชิดขอบทางด้านซ้าย</div>
+          <div class="col-md-4">
+            <input type="radio" name="offense" required />ไม่ขนานชิดขอบทาง</div>
+          <div class="col-md-4">
+            <input type="radio" name="offense" required />ซ้อนคัน</div>
+          </div>
+          <b>(4) อื่นๆ</b>
+            <div class="row">
+            <input type="text" class="form-control" name="offense" placeholder="ระบุ">
+          </div>
+          
+        </div>
+
+        <div class="mb-3">
+          
+          <b>เหตุเกิดที่ :</b>
+          <div class="row">
+          <div class="col-md-4">
+            <input type="text" class="form-control" placeholder="ตรอก/ซอย (ถ้ามี)">
+          </div>
+          <div class="col-md-4">
+            <input type="text" class="form-control" placeholder="ถนน(ถ้ามี)">
+          </div>
+          <div class="col-md-4">
+            <input type="text" class="form-control" name="place" placeholder="ตำบล/แขวง ">
+          </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="row">
+          <div class="col-md-4">
+            <input type="text" class="form-control" name="place" placeholder="อำเภอ/เขต ">
+          </div>
+          <div class="col-md-4">
+            <input type="radio" name="city2" required />กรุงเทพมหานคร</div>
+          <div class="col-md-2">
+            <input type="radio" name="city2" required />จังหวัด</div>
+          <div class="col-md-2">
+            <input type="text" class="form-control" name="city2" placeholder="จังหวัด">
+            <div class="invalid-feedback">
+              เลือกจังหวัดของคุณ
+            </div>
+          </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 mb-3">
+          
+            <b>เมื่อวันที่ :</b>
+            <input type="date" >
+        </div>  
+        <div class="col-md-6 mb-3">
+            <b>เวลา :</b>
+            <input type="time">
+        </div>  
+          <div class="invalid-feedback">
+            กรุณากรอกวันที่และเวลา
+        </div>
+
+      
+
+        <div class="mb-3">
+         <b>  อาศัยอำนาจตามความในมาตรา 140 วรรคหนึ่ง แห่ง พ.ร.บ.จราจรทางบก พ.ศ.2522ซึ่งแก้ไขเพิ่มเติมโดย พ.ร.บ.จราจรทางบก(ฉบับที่9) พ.ศ.2557 และมาตรา141 แห่ง พ.ร.บ.จราจรทางบก พ.ศ.2522 ซึ่งแก้ไขเพิ่มเติมโดย พ.ร.บ.จราจรทางบก (ฉบับที่11) พ.ศ.2559 ให้ผู้ขับขี่หรือเจ้าของรถหรือผู้ครอบครองรถไปชำระค่าปรับตามข้อกำหนดสำนักงานตำตรวจแห่งชาติ จำนวนเงิน</b>
+         <div class="col-md-2">
+          <input type="text" class="form-control" name="money" placeholder="จำนวนเงิน"> </div>
+          <b>บาท ต่อพนักงานสอบสวน ณ สถานีตำตรวจ หรือ ชำระด้วยวิธีอื่นใดตามที่ระบุไว้ด้านล่างใบสั่งนี้ ภายใน 7 วันนับตั้งแต่วันที่ได้รับใบสั่ง</b>
+        </div>
+
+        <div class="mb-3">
+          <input type="radio"  required />ส่งทางไปรษณีย์พร้อมพยานหลักฐานและให้เจ้าของรถหรือผู้ครอบครองรถไปชำระค่าปรับตามที่ระบุไว้ข้างต้นภายในสามสิบวันนับแต่วันที่ได้รับใบสั่ง</div>
+        </div>
+
+        <div class="mb-3">
+          
+          <b>ลงชื่อผู้ออกใบสั่ง</b>
+          <div class="row">
+            <div class="col-md-4">
+            <input type="text" class="form-control" name="Y" placeholder="ยศ"></div>
+            <div class="col-md-4">
+              <input type="text" class="form-control" name="name" placeholder="ชื่อ"></div>
+            <div class="col-md-4">
+              <input type="text" class="form-control" name="last" placeholder="ชื่อสกุล"></div>
+            <div class="invalid-feedback">
+              ใส่ชื่อของคุณ
+            </div>
+          </div>  
+        </div>
+
+        <div class="mb-3">
+          <div class="col-md-4">
+            <input type="radio" name="staff" required />เจ้าพนักงานจราจร</div>
+          <div class="col-md-4">
+            <input type="radio" name="staff" required />พนักงานเจ้าหน้าที่</div>
+          <div class="col-md-4">
+            <input type="text" class="form-control" name="staff" placeholder="รหัส"> 
+            <div class="invalid-feedback">
+              ใส่รหัสของคุณ
+            </div>
+            
+          </div>
+
+
+        </div>
+
+        <div class="py-5 text-center">
+          <h3>ใบรับแทนใบอนุญาตขับขี่</h3>
+        </div>
+
+        <div class="mb-3">
+          <div class="row">
+
+
+          </div>
+
+        </div>
+        <div class="mb-3">
+          <div class="row">
+
+            
+          </div>
+        </div>
+
+
+
+
+        <div class="mb-3">
+          <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+          <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+        </div>
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="country">Country</label>
+            <select class="custom-select d-block w-100" id="country" required>
+              <option value="">Choose...</option>
+              <option>United States</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="state">State</label>
+            <select class="custom-select d-block w-100" id="state" required>
+              <option value="">Choose...</option>
+              <option>California</option>
+            </select>
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="zip">Zip</label>
+            <input type="text" class="form-control" id="zip" placeholder="" required>
+            <div class="invalid-feedback">
+              Zip code required.
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="same-address">
+          <label class="custom-control-label" for="same-address">Shipping address is the same as my billing
+            address</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="save-info">
+          <label class="custom-control-label" for="save-info">Save this information for next time</label>
+        </div>
+        <hr class="mb-4">
+        <h4 class="mb-3">Payment</h4>
+        <div class="d-block my-3">
+          <div class="custom-control custom-radio">
+            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+            <label class="custom-control-label" for="credit">Credit card</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="debit">Debit card</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="paypal">PayPal</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="cc-name">Name on card</label>
+            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            <small class="text-muted">Full name as displayed on card</small>
+            <div class="invalid-feedback">
+              Name on card is required
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="cc-number">Credit card number</label>
+            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+            <div class="invalid-feedback">
+              Credit card number is required
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <label for="cc-expiration">Expiration</label>
+            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+            <div class="invalid-feedback">
+              Expiration date required
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="cc-cvv">CVV</label>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+            <div class="invalid-feedback">
+              Security code required
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+      </form>
+    </div>
+  </div>
+  <div class="container">
+  <div class="py-5 text-right">
+    <i class="fas fa-barcode fa-3x text-black-3 "></i> <i class="fas fa-barcode fa-3x text-black-3 "></i><i class="fas fa-barcode fa-3x text-black-3 "></i><i class="fas fa-barcode fa-3x text-black-3 "></i>
+  </div>
+</div>
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2017-2020 Company Name</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+  </div>
+  
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+  
+</body>
+</html>
